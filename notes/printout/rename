@@ -1,0 +1,8 @@
+#!/bin/bash
+variable=14
+mkdir -p printout
+for f in *; do 
+	echo "testing $f file";
+	lpr -P laser -# 2 $f ; 
+	variable=$(($variable + 1)); 
+done

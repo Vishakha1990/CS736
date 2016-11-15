@@ -1,0 +1,8 @@
+#!/bin/bash
+variable=14
+mkdir -p printout
+for f in *; do 
+	echo "testing $f file";
+	cp "$f" printout/;
+	variable=$(($variable + 1)); 
+done
